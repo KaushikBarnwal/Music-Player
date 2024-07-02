@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player...</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div id="NAVhome"><a href="index.html">HOME</a></div>
+            <div id="NAVfav"><a href="favourite.html">Favourites</a></div>
+            <div id="NAVsearch"><i class="fa-solid fa-music"></i>&nbsp;<input type="text" id="searchbar" placeholder="Search Songs..."></div>
+        </div>
+    </nav>
+    <div class="searchresults" id="searchresults"></div>
+    <div class="favplayer">
+        <h1>Favourites Songs...</h1>
+        <div class="favplaylist">
+            <ul id="favplaylist"></ul>
+        </div>
+        <audio id="audiolist"></audio>
+    </div>
+    <div class="footer">
+        <div class="nowplaying">
+            <span id="currentTitle">Track Title</span>
+        </div>
+        <div class="timeTrack">
+            <span id="currenttime">00:00</span>
+            <input type="range" id="progressbar" value="0" min="0" max="100">
+            <span id="duration">00:00</span>
+        </div>
+        <div class="pic">
+            <img src="covers/1.jpeg" width="90" alt="" id="pic">
+        </div>
+        <div class="Gif">
+            <img src="play.gif" width="90px" alt="" id="gif">
+        </div>
+        <div class="controls">
+            <button id="previous"><i class="fa-solid fa-backward-step"></i><br><span>Previous</span></button>
+            <button id="playpause"><i class="fa-regular fa-circle-play"></i><br><span>Play/Pause</span></button>
+            <button id="next"><i class="fa-solid fa-forward-step"></i><br><span>Next</span></button>
+            <input type="number" id="skipcount" min="1" placeholder="SkipNo.">
+            <button id="skip"><i class="fa-solid fa-forward"></i><br><span>Skip</span></button>
+        </div>
+        <div class="volumeControls">
+            <button id="mute"><i class="fa-solid fa-volume-high"></i></button>
+            <input type="range" id="volumebar" value="1" min="0" max="1" step="0.1">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="favorite.js"></script>
+    <script src="https://kit.fontawesome.com/57e4224dea.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
