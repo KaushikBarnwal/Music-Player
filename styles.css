@@ -2,7 +2,6 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    /* background-color: #f0f0f0; */
     background-color: #f4f4f9;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,7 +15,6 @@ nav{
     position: fixed;
     width: 100%;
     padding: 1em 0;
-    /* background-color: #007bff; */
     background-color: #283593;
 }
 .navbar{
@@ -44,7 +42,6 @@ nav{
 }
 .navbar i{
     padding: 0.4em;
-    /* background-color: #000; */
     background-color: #1a237e;
     border-radius: 10px 0 0 10px;
     color: #fff;
@@ -53,7 +50,6 @@ nav{
     width: 100%;
     max-width: 300px;
     padding: 0.5em;
-    /* background-color: #000; */
     background-color: #3949ab;
     border: none;
     border-radius: 0 10px 10px 0;
@@ -67,7 +63,6 @@ nav{
     max-width: 300px;
     margin: 0.5em auto;
     padding: 1em;
-    background-color: #3949ab;
     border: 1px solid #ddd;
     border-radius: 5px;
     color: #fff;
@@ -271,4 +266,4 @@ nav{
     .timeTrack span{
         font-size: 0.8em;
     }
-} 
+}
