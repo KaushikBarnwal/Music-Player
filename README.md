@@ -1,6 +1,6 @@
 # 🎵 CodeAlpha_Music-Player 🎵
 
-A web-based music player that allows users to play songs, manage playlists, and mark favorites. The player includes features like search, play/pause, next/previous track, volume control, and seek functionality.
+A web-based music player that allows users to play songs, manage playlists, and mark favorites. The player includes features like search, play/pause, next/previous track, volume control, seek functionality, and skip functionality.
 
 ## Features
 
@@ -8,8 +8,11 @@ A web-based music player that allows users to play songs, manage playlists, and 
 - **Next/Previous**: ⏭️⏮️ Skip to the next or previous track in the playlist.
 - **Volume Control**: 🔊 Adjust the volume and mute/unmute the audio.
 - **Seek**: ⏩ Seek to a specific time in the track using the progress bar.
+- **Skip**: ⏭️ Skip a specific number of tracks using the skip count input.
 - **Favorites**: ❤️ Mark tracks as favorites and manage a separate favorites playlist.
 - **Search**: 🔍 Search for tracks in the playlist and favorites.
+- **Cover Image**: 🖼️ Display the cover image of the current track.
+- **GIF Play**: 🎞️ Show a playing GIF when a track is playing.
 - **Responsive Design**: 📱 Adapts to different screen sizes using media queries.
 
 ## Setup
@@ -36,6 +39,15 @@ A web-based music player that allows users to play songs, manage playlists, and 
 ### Search
 
 - **Search Tracks**: 🔍 Use the search bar to find tracks in the current playlist. The search results will appear below the search bar.
+
+### Skip
+
+- **Skip Tracks**: ⏭️ Use the skip input to specify the number of tracks to skip. Enter the number in the skip count input field and click the skip button to move forward or backward by that number of tracks.
+
+### Cover Image and GIF Play
+
+- **Cover Image**: 🖼️ The cover image of the currently playing track is displayed on the player. This helps in visually identifying the track.
+- **GIF Play**: 🎞️ A GIF indicating the track is playing will be shown when a track is being played. The GIF will be hidden when the track is paused.
 
 ## Responsive Design
 
