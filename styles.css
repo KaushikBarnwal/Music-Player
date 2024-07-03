@@ -39,6 +39,7 @@ nav{
     display: flex;
     flex-grow: 1;
     justify-content: center;
+    margin-right: 0.2em;
 }
 .navbar i{
     padding: 0.4em;
