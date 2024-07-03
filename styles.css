@@ -249,19 +249,10 @@ nav{
 
 /* Media Query */
 @media (max-width: 768px){
-    .player, .favplayer{
+    /* .player, .favplayer{
         width: 90%;
         margin-top: 4em;
-    }
-    .controls button, .volumeControls button{
-        padding: 3px;
-    }
-    .controls input{
-        width: 3em;
-    }
-    #progressbar{
-        width: 70vw;
-    }
+    } */
     .nowplaying{
         font-size: 0.9em;
     }
@@ -270,23 +261,14 @@ nav{
     }
 }
 @media (max-width: 480px){
-    .player, .favplayer{
+    /* .player, .favplayer{
         width: 95%;
         margin-top: 2em;
-    }
-    .controls button, .volumeControls button{
-        padding: 2px;
-    }
-    .controls input{
-        width: 2.5em;
-    }
-    #progressbar{
-        width: 60vw;
-    }
+    } */
     .nowplaying{
         font-size: 0.8em;
     }
     .timeTrack span{
         font-size: 0.8em;
     }
-}
+} 
