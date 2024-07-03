@@ -73,13 +73,16 @@ nav{
     color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 100;
-    /* background-color: rgba(0, 0, 0, 0.61); */
+    background-color: rgba(57, 73, 171, 0.7);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
 .searchItemClass{
     padding: 0.3em 0;
     border-bottom: 1px solid #4f4f4f;
+}
+.searchItemClass:hover{
+    cursor: pointer;
 }
 .player, .favplayer{
     width: 500px;
@@ -148,23 +151,23 @@ nav{
     cursor: pointer;
     outline: none;
 }
-.nowplaying{
-    margin-bottom: 5px;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-}
 .footer{
     position: fixed;
     bottom: 0;
     height: 130px;
     width: 100%;
-    padding: 1em 0;
+    padding: 0.5em 0;
     display: flex;
     flex-direction: column;
     background-color: #1a237e;
     align-items: center;
     z-index: 2;
+}
+.nowplaying{
+    margin-bottom: 3px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
 }
 .timeTrack{
     margin: 0 10px 10px 10px;
@@ -174,7 +177,7 @@ nav{
     justify-content: space-between;
 }
 #progressbar{
-    width: 75vw;
+    width: 85vw;
     flex-grow: 1;
 }
 .controls{
@@ -233,14 +236,57 @@ nav{
 }
 .pic img{
     position: absolute;
-    left: 3vh;
-    margin-top: -10px;
+    left: 2.5vh;
+    margin-top: -5px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); */
 }
 .Gif{
     position: absolute;
-    right: 3vh;
+    right: 2.5vh;
     margin-top: 100px;
+}
+
+/* Media Query */
+@media (max-width: 768px){
+    .player, .favplayer{
+        width: 90%;
+        margin-top: 4em;
+    }
+    .controls button, .volumeControls button{
+        padding: 3px;
+    }
+    .controls input{
+        width: 3em;
+    }
+    #progressbar{
+        width: 70vw;
+    }
+    .nowplaying{
+        font-size: 0.9em;
+    }
+    .timeTrack span{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 480px){
+    .player, .favplayer{
+        width: 95%;
+        margin-top: 2em;
+    }
+    .controls button, .volumeControls button{
+        padding: 2px;
+    }
+    .controls input{
+        width: 2.5em;
+    }
+    #progressbar{
+        width: 60vw;
+    }
+    .nowplaying{
+        font-size: 0.8em;
+    }
+    .timeTrack span{
+        font-size: 0.8em;
+    }
 }

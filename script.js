@@ -19,10 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const GIF = document.getElementById('gif');
     let previousVolume = audioList.volume;
 
-    // let cross_span = document.createElement("span");
-    // cross_span.innerHTML = '<img src="image/x2.png" />';
-    // create_li.appendChild(cross_span);
-
     let Tracks = [
         { title: 'Aankhon Mein Teri', src: 'Music/1.mp3', coverimg: "covers/1.jpeg" },
         { title: 'Bekhayali', src: 'Music/2.mp3', coverimg: "covers/2.jpeg" },
@@ -85,8 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
             ${minutes}:${seconds < 10 ? '0' : ''}${seconds}
         `;
     }
+    searchResults.style.display = 'none';
     function searchSongs(query) {
         searchResults.innerHTML = '';
+        searchResults.style.display = query ? 'block' : 'none';
         if (query) {
             const results = Tracks.filter(track => track.title.toLowerCase().includes(query.toLowerCase()));
             results.forEach(track => {
@@ -101,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     GIF.style.opacity = 1;
                     searchBar.value = '';
                     searchResults.innerHTML = '';
+                    searchResults.style.display = 'none';
                 });
                 searchResults.appendChild(resultItem);
             });
@@ -253,6 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
             currentTrackIndex = index;
             loadtrack(currentTrackIndex);
             audioList.play();
+            PlayPause.innerHTML = `
+                    <i class="fa-solid fa-pause"></i><br><span>Play/Pause</span>
+            `;
             GIF.style.opacity = 1;
         });
         playList.appendChild(li);

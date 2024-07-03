@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateFavPlaylist() {
         const items = favPlaylist.querySelectorAll('li');
         items.forEach((item, index) => {
-            const playPauseIcon = item.querySelectorAll('li');
+            const playPauseIcon = item.querySelector('.playpauseicon');
             if (index === currentTrackIndex) {
                 item.classList.add('active');
                 playPauseIcon.innerHTML = `<i class="fa-solid fa-pause"></i>`;
@@ -45,8 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // function updateCurrentTime()
     // function updateDuration()
+    searchResults.style.display = 'none';
     function searchSongs(query) {
         searchResults.innerHTML = '';
+        searchResults.style.display = query ? 'block' : 'none';
         if (query) {
             const results = favorites.filter(track => track.title.toLowerCase().includes(query.toLowerCase()));
             results.forEach(track => {
@@ -61,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     GIF.style.opacity = 1;
                     searchBar.value = '';
                     searchResults.innerHTML = '';
+                    searchResults.style.display = 'none';
                 });
                 searchResults.appendChild(resultItem);
             });
@@ -151,6 +154,9 @@ document.addEventListener('DOMContentLoaded', () => {
             currentTrackIndex = index;
             loadtrack(currentTrackIndex);
             audioList.play();
+            PlayPause.innerHTML = `
+                    <i class="fa-solid fa-pause"></i><br><span>Play/Pause</span>
+            `;
             GIF.style.opacity = 1;
         });
         favPlaylist.appendChild(li);
