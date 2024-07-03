@@ -236,7 +236,7 @@ nav{
 }
 .pic img{
     position: absolute;
-    left: 2.5vh;
+    left: 2vh;
     margin-top: -5px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
@@ -248,7 +248,7 @@ nav{
 }
 
 /* Media Query */
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .player, .favplayer{
         width: 90%;
         margin-top: 4em;
@@ -289,4 +289,4 @@ nav{
     .timeTrack span{
         font-size: 0.8em;
     }
-}
+} */
