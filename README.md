@@ -1,4 +1,4 @@
-# 🎵 CodeAlpha_Music-Player 🎵
+# 🎵 Vision's Music-Player 🎵
 
 A web-based music player that allows users to play songs, manage playlists, and mark favorites. The player includes features like search, play/pause, next/previous track, volume control, seek functionality, and skip functionality.
 
